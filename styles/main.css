@@ -1,20 +1,67 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    background: black;
+    margin: 0;
+    width: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0 3em;
+    background: rgba(0, 255, 0, 0.09);
+    margin: 1em auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1080px;
+    border: 2px solid gray;
 }
 
 h1 {
+    color: gray;
     font-weight: 700;
     font-size: 3em;
     text-align: center;
-    text-shadow: 3px 2px 5px black;
+    text-shadow: 3px 2px 5px greenyellow;
+}
+
+h2 {
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 1em 6em;
+    text-shadow: 1px 1px 5px greenyellow;
 }
 
 img {
     display: block;
     margin: 0 auto;
+    max-width: 75%;
+}
+
+p, ul {
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 1em;
+    padding: 2em 7em;
+    text-shadow: 1px 1px 5px greenyellow;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20%;
+    justify-content: center;
+}
+
+li {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    p, h2 {
+        text-align: center;
+        font-size: 1em;
+        padding: 2em 6em;
+    }
 }
